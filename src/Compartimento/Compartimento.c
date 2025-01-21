@@ -53,3 +53,37 @@ int inserir_rocha(Compartimento* compartimento, RochaMineral* rocha){ //adiciona
     }
     return 0;
 }
+
+void insert_sort(Compartimento* compartimento, int* comparacoes, int* movimentacoes){}
+
+
+void particao_quick(Compartimento*compartimento, int esq, int dir, int*i, int*j){
+    RochaMineral pivo, aux;  
+    *i = esq; *j = dir;
+    pivo = compartimento->rochas[(*i + *j)/2];  
+
+    do{
+        while(pivo.peso > compartimento->rochas[*i].peso) (*i)++;
+        while(pivo.peso < compartimento->rochas[*j].peso) (*j)--;
+        if(*i<=*j){
+            aux = compartimento->rochas[*i]; compartimento->rochas[*i] = compartimento->rochas[*j]; compartimento->rochas[*j] = aux;
+            (*i)++; (*j)--;
+        }
+
+
+    }while(*i <=*j);
+}
+
+void ordena_quick(Compartimento* compartimento, int esq, int dir){
+
+    int i,j;
+    particao_quick(compartimento, esq, dir, &i,&j);
+    if(esq<j) ordena_quick(compartimento,esq,j);
+    if(i<dir)ordena_quick(compartimento,i,dir); 
+}
+
+void quick_sort(Compartimento* compartimento, int* comparacoes, int* movimentacoes){
+    ordena_quick(compartimento,0, compartimento->tamanho);
+}
+
+ 

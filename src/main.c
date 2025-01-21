@@ -10,7 +10,7 @@ FILE *leitura_arq(int argc, char **argv);
 
 void case_R_file(FILE * file, ListaMinerais * lista_minerais_file);
 void operacao_R(float lat_rocha, float long_rocha, float peso_rocha, ListaMinerais* lista_minerais);
-imprime_saida(Compartimento * compartimento,int comparacoes,int movimentacoes, double tempo, char algoritmo[]);
+void imprime_saida(Compartimento * compartimento,int comparacoes,int movimentacoes, double tempo, char algoritmo[]);
 
 int main(int argc, char **argv){
     if (leitura_arq(argc,argv) != 0){
@@ -37,12 +37,12 @@ int main(int argc, char **argv){
         compartimento_2 = compartimento_1;
 
         inicio = clock();
-        orderna_isert(&compartimento_1,&comparacoes1,&movimentacoes1);
+        insert_sort(&compartimento_1,&comparacoes1,&movimentacoes1);
         fim = clock();
         tempo1 = (double)(fim-inicio)/CLOCKS_PER_SEC;
 
         inicio = clock();
-        ordena_quick(&compartimento_2,&comparacoes2,&movimentacoes2);
+        quick_sort(&compartimento_2,&comparacoes2,&movimentacoes2);
         fim = clock();
         tempo2 = (double)(fim-inicio)/CLOCKS_PER_SEC;
 
@@ -100,7 +100,7 @@ void case_R_file(FILE * file, ListaMinerais * lista_minerais_file){
         m++;
 }
 //chamada da operacao R, que tem como parametro os dados da rocha
-operacao_R(lat_rocha, long_rocha, peso_rocha, &lista_minerais_file);
+operacao_R(lat_rocha, long_rocha, peso_rocha, lista_minerais_file);
 }
 
 
@@ -117,8 +117,9 @@ void operacao_R(float lat_rocha, float long_rocha, float peso_rocha, ListaMinera
 }
 
 
-imprime_saida(Compartimento * compartimento,int comparacoes,int movimentacoes, double tempo, char algoritmo[]){
+void imprime_saida(Compartimento * compartimento,int comparacoes,int movimentacoes, double tempo, char algoritmo[]){
     imprime_compartimento(compartimento);
     printf("\n");
     printf("Comparacoes: %d\nMovimentacoes: %d\nTempo de execucao: %fs\nAlgoritimo: %s", comparacoes,movimentacoes,tempo,algoritmo);
+
 }
