@@ -1,0 +1,251 @@
+250
+-89.611858 -47.290966 27 Solarium Ferrolita
+12.369865 -166.874731 21 Aquavitae Terranita
+80.052116 173.25365 26 Terranita Ferrolita
+36.328385 151.448798 17 Aquavitae Calaris Ferrolita
+67.442398 -164.809937 20 Ferrolita Aquavitae
+-24.047728 75.640503 2 Terranita Ferrolita
+16.331487 40.674308 20 Ferrolita Aquavitae
+-64.828143 101.441513 22 Terranita Ferrolita
+46.877129 -130.222736 25 Solarium Ferrolita
+-18.118925 77.526392 14 Terranita Ferrolita
+72.077804 -107.393513 18 Solarium Ferrolita
+-49.812499 -29.50019 7 Terranita Ferrolita
+40.553168 179.947834 13 Ferrolita Aquavitae
+57.200417 64.039073 9 Calaris Aquavitae
+-60.32686 -143.121494 30 Terranita Ferrolita
+45.877652 -79.472678 1 Aquavitae Terranita
+82.361225 82.152378 20 Calaris Aquavitae
+37.86926 127.283161 7 Aquavitae Calaris Ferrolita
+-65.797969 -173.698119 3 Terranita Ferrolita
+-1.416565 -37.712197 23 Calaris Aquavitae
+-54.108416 32.495906 8 Terranita Ferrolita
+-48.430254 -39.526549 21 Ferrolita Aquavitae
+64.154253 -2.312264 23 Calaris Aquavitae
+-53.998019 127.466255 2 Terranita Solarium
+30.632113 -71.523038 2 Aquavitae Terranita
+81.855732 -34.760703 21 Aquavitae Terranita
+85.561549 -27.745525 28 Solarium Ferrolita
+-14.082464 79.07133 7 Aquavitae Calaris Ferrolita
+-65.487355 74.540568 17 Terranita Solarium
+-65.252021 -60.730568 20 Aquavitae Calaris Ferrolita
+-36.95484 5.786561 6 Terranita Calaris
+88.455656 -88.551113 21 Solarium
+30.228599 -109.628224 15 Terranita Calaris
+39.018611 -53.965387 1 Terranita Calaris
+10.940021 10.394557 1 Solarium
+-80.132807 57.852478 7 Solarium
+-43.578684 -40.670123 19 Ferrolita Aquavitae
+9.666355 -60.248808 25 Ferrolita
+-84.331458 161.471908 29 Aquavitae Terranita
+37.172665 74.868431 5 Ferrolita Aquavitae
+-11.007845 -10.934816 9 Solarium Ferrolita
+70.377104 170.069328 22 Aquavitae Calaris Ferrolita
+-71.11422 -123.442221 17 Solarium
+88.292013 -26.392086 6 Ferrolita Aquavitae
+62.599814 67.856719 12 Terranita Ferrolita
+-28.87542 -126.166592 12 Solarium Ferrolita
+46.840118 -173.862367 25 Calaris Aquavitae
+-76.170441 24.513948 19 Ferrolita
+45.698999 172.048987 25 Aquavitae Calaris Ferrolita
+6.377283 7.245328 13 Terranita Ferrolita
+69.178369 53.851236 19 Solarium Ferrolita
+16.037512 132.006164 27 Calaris Aquavitae
+48.801012 113.038074 26 Calaris Aquavitae
+39.852974 -73.774678 21 Ferrolita
+60.257182 -24.918827 6 Terranita Solarium
+-18.502004 -7.225048 15 Terranita Ferrolita
+26.75951 115.103056 20 Terranita Solarium
+24.034832 157.801554 21 Terranita Calaris
+-62.069214 -130.979545 20 Solarium
+80.18361 14.691444 9 Terranita Ferrolita
+-83.42051 -174.636186 24 Aquavitae Calaris Ferrolita
+63.400237 127.766869 23 Solarium Ferrolita
+-16.342853 1.757712 18 Terranita Ferrolita
+83.561705 132.209182 29 Terranita Solarium
+47.10058 -44.512385 5 Aquavitae Terranita
+13.239947 -17.043508 23 Aquavitae Terranita
+-79.651134 61.174417 29 Calaris Aquavitae
+-74.591575 41.951043 30 Solarium
+80.752871 103.511476 22 Terranita Ferrolita
+-29.264412 80.613507 1 Solarium Ferrolita
+42.136073 120.607284 28 Solarium Ferrolita
+6.064901 -3.937961 14 Calaris Aquavitae
+-57.318926 80.189642 21 Ferrolita
+-5.101239 66.742662 9 Terranita Ferrolita
+38.497343 -98.458316 21 Aquavitae Calaris Ferrolita
+-26.882553 -106.01404 3 Solarium Ferrolita
+-81.080372 -37.853266 9 Ferrolita Aquavitae
+4.685307 32.315911 4 Solarium Ferrolita
+55.119853 139.761319 27 Solarium
+35.70512 -70.639914 3 Terranita Calaris
+-72.387218 15.762366 6 Solarium Ferrolita
+-55.203376 93.628485 8 Solarium
+75.168704 59.539863 2 Ferrolita
+-4.416044 178.128505 2 Terranita Ferrolita
+-50.04241 22.204498 27 Calaris Aquavitae
+-64.838562 116.580008 30 Aquavitae Calaris Ferrolita
+7.3595 -178.641858 30 Ferrolita
+82.946298 55.901769 22 Calaris Aquavitae
+2.210397 -106.24202 25 Solarium
+-2.519796 -8.483334 13 Terranita Calaris
+17.010167 99.673645 3 Aquavitae Terranita
+47.53037 157.543736 29 Terranita Solarium
+-13.985636 -27.578223 10 Terranita Calaris
+55.408584 -114.235262 24 Aquavitae Calaris Ferrolita
+81.154847 37.610715 13 Solarium Ferrolita
+84.730122 -74.84954 22 Calaris Aquavitae
+-37.172535 -17.819178 3 Ferrolita
+25.820972 -166.531364 8 Aquavitae Calaris Ferrolita
+36.646877 83.325866 7 Solarium
+65.673325 68.254819 9 Solarium
+55.382858 177.054451 20 Ferrolita
+4.076053 120.128521 20 Solarium
+68.033841 124.078218 19 Terranita Ferrolita
+-13.785478 -102.676806 9 Ferrolita Aquavitae
+1.713507 -23.002615 24 Ferrolita Aquavitae
+-80.474159 56.107851 27 Ferrolita
+-48.930307 106.55462 2 Calaris Aquavitae
+24.188126 -115.373155 15 Aquavitae Terranita
+-62.706475 164.291833 4 Aquavitae Terranita
+85.031293 139.928491 30 Terranita Calaris
+-36.228798 50.472979 27 Ferrolita
+37.830679 50.367212 17 Terranita Calaris
+-71.01118 55.524811 18 Terranita Solarium
+70.002445 -157.991586 23 Aquavitae Terranita
+74.058865 -147.00237 25 Terranita Solarium
+58.21281 5.775653 13 Solarium Ferrolita
+35.04947 110.048557 1 Terranita Ferrolita
+68.461254 151.268761 14 Aquavitae Calaris Ferrolita
+22.787253 -56.687917 20 Solarium
+30.76944 -33.567121 5 Ferrolita
+-9.022057 167.63111 6 Calaris Aquavitae
+-20.311733 123.36692 22 Terranita Solarium
+75.783248 -17.592227 9 Solarium
+29.804466 -18.096871 6 Terranita Calaris
+-81.591293 6.52252 1 Terranita Calaris
+15.156198 27.794443 23 Ferrolita
+64.045038 -88.281414 26 Aquavitae Terranita
+1.916688 -103.454574 10 Calaris Aquavitae
+-82.846362 -76.326109 13 Terranita Calaris
+-71.836279 126.884051 25 Ferrolita
+-5.021657 43.335613 12 Terranita Calaris
+50.96905 -21.275101 3 Solarium
+42.3414 -30.509917 16 Calaris Aquavitae
+46.12185 -65.313025 30 Solarium Ferrolita
+14.74746 136.991619 30 Terranita Ferrolita
+-17.286481 86.103918 29 Aquavitae Calaris Ferrolita
+-5.51107 -10.785994 7 Aquavitae Terranita
+-45.415303 120.576802 12 Solarium Ferrolita
+-87.076478 -18.131438 25 Aquavitae Calaris Ferrolita
+-55.47317 159.713818 9 Solarium
+-20.06033 115.645088 10 Terranita Calaris
+-57.434711 -88.220339 9 Solarium
+72.672819 150.738867 26 Solarium
+-47.634569 -115.955727 8 Terranita Solarium
+41.308097 128.82431 18 Terranita Ferrolita
+46.568026 100.129599 30 Terranita Solarium
+4.213952 -123.676321 12 Terranita Ferrolita
+-74.557698 -89.890023 19 Solarium Ferrolita
+-67.717386 67.430297 16 Terranita Solarium
+66.402589 120.852119 24 Calaris Aquavitae
+1.715279 -140.193891 2 Terranita Ferrolita
+-14.005846 -168.645146 6 Terranita Solarium
+-48.873455 105.015526 4 Ferrolita
+85.015474 -34.799966 12 Ferrolita
+-74.645158 173.679682 11 Terranita Solarium
+85.818717 -67.944437 19 Terranita Ferrolita
+-15.351353 -116.983733 11 Ferrolita
+-11.91639 -73.880192 23 Terranita Solarium
+-12.066856 -136.126044 8 Aquavitae Terranita
+21.507409 14.042032 18 Calaris Aquavitae
+-6.732166 -19.268488 12 Solarium Ferrolita
+76.404327 92.647349 8 Aquavitae Calaris Ferrolita
+85.395302 122.737412 16 Calaris Aquavitae
+57.566745 -17.773971 10 Solarium Ferrolita
+-16.061574 22.705676 14 Aquavitae Calaris Ferrolita
+30.035038 56.351462 16 Terranita Solarium
+-82.066033 26.540396 11 Terranita Solarium
+3.007914 34.761272 15 Terranita Calaris
+-16.110183 -149.789367 11 Solarium Ferrolita
+39.270262 34.300429 18 Terranita Ferrolita
+6.713713 -161.811454 15 Terranita Calaris
+32.406466 42.043526 6 Terranita Ferrolita
+0.049174 -126.205949 1 Solarium
+-3.770746 -79.871887 27 Solarium
+-79.101964 -85.878973 20 Solarium
+-57.363378 98.140496 28 Ferrolita
+13.087619 -77.046751 7 Ferrolita
+58.822559 -140.765917 30 Ferrolita Aquavitae
+64.963507 -109.631099 4 Calaris Aquavitae
+16.027978 153.540002 6 Ferrolita Aquavitae
+46.636775 -174.755009 19 Aquavitae Calaris Ferrolita
+85.817059 29.089745 2 Calaris Aquavitae
+49.763093 144.396585 1 Calaris Aquavitae
+60.801409 68.375024 29 Solarium Ferrolita
+-75.044034 -178.256974 3 Ferrolita Aquavitae
+44.81589 -35.130196 13 Terranita Solarium
+-15.219882 -3.150953 8 Calaris Aquavitae
+33.24313 -179.770818 29 Terranita Ferrolita
+24.900928 116.903676 29 Solarium Ferrolita
+-31.160782 7.672746 7 Terranita Ferrolita
+-3.339751 -120.842423 26 Terranita Ferrolita
+2.712315 -74.964636 21 Terranita Calaris
+-12.644731 -50.869869 8 Solarium Ferrolita
+-25.155402 151.224853 22 Solarium Ferrolita
+-6.370272 153.310704 22 Solarium
+26.704949 98.155596 7 Aquavitae Calaris Ferrolita
+-64.126353 31.384458 3 Terranita Calaris
+21.162898 172.799226 16 Solarium
+-9.502848 -21.673304 12 Calaris Aquavitae
+77.248999 95.13599 12 Terranita Calaris
+14.287276 -50.427665 2 Solarium Ferrolita
+-31.81085 44.124646 9 Terranita Ferrolita
+25.610578 14.397171 1 Solarium Ferrolita
+54.814582 83.060679 21 Terranita Ferrolita
+85.254617 74.902358 27 Terranita Calaris
+-61.259948 122.461698 1 Ferrolita Aquavitae
+-44.279232 25.762303 23 Solarium
+-40.379417 -150.37054 14 Ferrolita Aquavitae
+-48.467819 43.731435 22 Terranita Ferrolita
+-11.613593 -27.404515 22 Terranita Solarium
+77.422074 -95.508555 29 Aquavitae Terranita
+-87.325041 -78.270117 24 Calaris Aquavitae
+-57.388062 -89.977725 27 Calaris Aquavitae
+69.553874 -47.044306 30 Aquavitae Terranita
+50.736543 126.458597 27 Terranita Ferrolita
+-4.96923 -73.354024 23 Terranita Calaris
+22.668847 -5.89062 6 Solarium
+17.03282 -61.606396 22 Aquavitae Calaris Ferrolita
+-72.793382 -46.773792 5 Aquavitae Calaris Ferrolita
+-74.903677 -169.681399 17 Terranita Solarium
+5.763592 -8.349795 5 Ferrolita
+-27.528648 112.536599 9 Terranita Ferrolita
+-36.883283 147.746917 25 Terranita Calaris
+-43.025065 -161.646657 18 Calaris Aquavitae
+-85.813809 35.919967 9 Solarium Ferrolita
+-72.15322 -34.664392 23 Terranita Calaris
+71.513012 160.968505 9 Aquavitae Calaris Ferrolita
+-25.367685 37.835566 9 Solarium
+39.831963 17.521578 2 Calaris Aquavitae
+39.410245 66.383604 28 Solarium Ferrolita
+-9.953659 63.459844 10 Solarium
+12.752445 -130.023886 13 Terranita Ferrolita
+57.236433 122.423302 20 Ferrolita Aquavitae
+73.08107 -81.531501 19 Ferrolita Aquavitae
+-62.644967 -170.749325 13 Terranita Solarium
+-89.174689 28.370319 22 Ferrolita Aquavitae
+52.955658 107.25212 22 Calaris Aquavitae
+73.33595 -154.243646 20 Aquavitae Calaris Ferrolita
+-4.239115 -55.856191 15 Aquavitae Calaris Ferrolita
+-86.743518 -13.208001 29 Terranita Solarium
+26.582727 17.800379 2 Aquavitae Calaris Ferrolita
+47.239542 -35.136848 14 Aquavitae Calaris Ferrolita
+-43.752156 -9.079196 9 Terranita Calaris
+-48.24108 -101.73327 9 Aquavitae Calaris Ferrolita
+39.958497 -156.893003 13 Terranita Solarium
+-41.87447 -37.1362 24 Solarium
+-88.57876 -21.19926 2 Solarium
+-87.596439 52.186973 8 Calaris Aquavitae
+60.773419 39.758321 29 Solarium
+59.797214 22.568362 7 Aquavitae Terranita
