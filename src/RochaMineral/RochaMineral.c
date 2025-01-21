@@ -4,7 +4,7 @@
 #include "./RochaMineral.h"
 
 //função para inicializar uma rocha
-void inicializaRochaMineral(RochaMineral *rocha, int id, float peso, MLista *lista, LocalRochaMineral local, char *dataColeta){
+void inicializaRochaMineral(RochaMineral *rocha, int id, float peso, MLista *lista, LocalRochaMineral local){
        
     setId(rocha, id);
     setPeso(rocha, peso);
@@ -12,7 +12,6 @@ void inicializaRochaMineral(RochaMineral *rocha, int id, float peso, MLista *lis
     escolheCategoria(rocha);
     setLatitude(rocha, local.latitude);
     setLongitude(rocha, local.longitude);
-    setDataColeta(rocha, dataColeta);
 
 }
 
@@ -35,10 +34,6 @@ float getLatitude(RochaMineral* rocha){
 float getLongitude(RochaMineral* rocha){
     return rocha->local.longitude;
 }
-char *getDataColeta(RochaMineral* rocha){
-    return rocha->dataColeta;
-}
-
 //definição de valores (sets)
 void setId(RochaMineral* rocha, int id){
     rocha->id = id;
@@ -57,9 +52,6 @@ void setLatitude(RochaMineral* rocha, float latitude){
 }
 void setLongitude(RochaMineral* rocha, float longitude){
     rocha->local.longitude = longitude;
-}
-void setDataColeta(RochaMineral* rocha, char *data){
-    strcpy(rocha->dataColeta, data);
 }
 
 //função que define a categoria da rocha a partir da lista de minerais
