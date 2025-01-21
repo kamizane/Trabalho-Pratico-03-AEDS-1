@@ -54,7 +54,25 @@ int inserir_rocha(Compartimento* compartimento, RochaMineral* rocha){ //adiciona
     return 0;
 }
 
-void insert_sort(Compartimento* compartimento, int* comparacoes, int* movimentacoes){}
+void insert_sort(Compartimento* compartimento, int* comparacoes, int* movimentacoes){
+    int n = compartimento->ultimo;
+
+    for(int i = 0; i < n; i++){
+        RochaMineral chave = compartimento->rochas[i];
+
+        int j = i - 1;
+
+        while (j >= 0 && compartimento->rochas[i].peso > chave.peso){
+            comparacoes++;
+            compartimento->rochas[j+1] = compartimento->rochas[i];
+            movimentacoes++;
+            j--;
+        }
+        compartimento->rochas[j+1] = chave;
+        movimentacoes++;
+        
+    }
+}
 
 
 void particao_quick(Compartimento*compartimento, int esq, int dir, int*i, int*j){
