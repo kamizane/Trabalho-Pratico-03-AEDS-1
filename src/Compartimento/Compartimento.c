@@ -76,6 +76,7 @@ void insert_sort(Compartimento* compartimento, int* comparacoes, int* movimentac
 
 
 void particao_quick(Compartimento*compartimento, int esq, int dir, int*i, int*j, int * comparacoes, int * movimentacoes){
+    *comparacoes +=1;
     RochaMineral pivo, aux;  
     *i = esq; *j = dir;
     pivo = compartimento->rochas[(*i + *j)/2];  
@@ -90,12 +91,13 @@ void particao_quick(Compartimento*compartimento, int esq, int dir, int*i, int*j,
             *comparacoes+=1;
         }
         if(*i<=*j){
+            *comparacoes +=1;
             aux = compartimento->rochas[*i]; compartimento->rochas[*i] = compartimento->rochas[*j]; compartimento->rochas[*j] = aux;
             *movimentacoes+=1;
             (*i)++; (*j)--;
         }
 
-
+        *comparacoes +=1;
     }while(*i <=*j);
 }
 
@@ -103,8 +105,10 @@ void ordena_quick(Compartimento* compartimento, int esq, int dir, int * comparac
 
     int i,j;
     particao_quick(compartimento, esq, dir, &i,&j, comparacoes, movimentacoes);
-    if(esq<j) ordena_quick(compartimento,esq,j, comparacoes, movimentacoes);
-    if(i<dir)ordena_quick(compartimento,i,dir, comparacoes, movimentacoes); 
+    if(esq<j)ordena_quick(compartimento,esq,j, comparacoes, movimentacoes);
+    *comparacoes +=1;
+    if(i<dir)ordena_quick(compartimento,i,dir, comparacoes, movimentacoes);
+    *comparacoes +=1;
 }
 
 void quick_sort(Compartimento* compartimento, int* comparacoes, int* movimentacoes){
