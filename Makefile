@@ -1,0 +1,2 @@
+compile: src/main.c src/Compartimento/Compartimento.c src/Mineral/Mineral.c src/ListaMinerais/ListaMinerais.c src/RochaMineral/RochaMineral.c
+	gcc src/main.c src/Compartimento/Compartimento.c src/Mineral/Mineral.c src/ListaMinerais/ListaMinerais.c src/RochaMineral/RochaMineral.c -Wall -Wextra -g -o main

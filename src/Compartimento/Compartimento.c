@@ -45,7 +45,7 @@ float retorna_peso_atual(Compartimento* compartimento){
 
 
 int inserir_rocha(Compartimento* compartimento, RochaMineral* rocha){ //adiciona rocha ao compartimento
-    if(compartimento->tamanho != compartimento->tamanho_maximo){
+    if(compartimento->tamanho < compartimento->tamanho_maximo){
         compartimento->rochas[compartimento->ultimo] = *rocha;
         compartimento->ultimo++;
         compartimento->tamanho++;
@@ -54,19 +54,25 @@ int inserir_rocha(Compartimento* compartimento, RochaMineral* rocha){ //adiciona
     return 0;
 }
 
-void insert_sort(Compartimento* compartimento, int* comparacoes, int* movimentacoes){}
 
 
-void particao_quick(Compartimento*compartimento, int esq, int dir, int*i, int*j){
+void particao_quick(Compartimento*compartimento, int esq, int dir, int*i, int*j, int * comparacoes, int * movimentacoes){
     RochaMineral pivo, aux;  
     *i = esq; *j = dir;
     pivo = compartimento->rochas[(*i + *j)/2];  
 
     do{
-        while(pivo.peso > compartimento->rochas[*i].peso) (*i)++;
-        while(pivo.peso < compartimento->rochas[*j].peso) (*j)--;
+        while(pivo.peso > compartimento->rochas[*i].peso){
+            (*i)++;
+            *comparacoes +=1;
+        }
+        while(pivo.peso < compartimento->rochas[*j].peso){
+            (*j)--;
+            *comparacoes+=1;
+        }
         if(*i<=*j){
             aux = compartimento->rochas[*i]; compartimento->rochas[*i] = compartimento->rochas[*j]; compartimento->rochas[*j] = aux;
+            *movimentacoes+=1;
             (*i)++; (*j)--;
         }
 
@@ -74,16 +80,17 @@ void particao_quick(Compartimento*compartimento, int esq, int dir, int*i, int*j)
     }while(*i <=*j);
 }
 
-void ordena_quick(Compartimento* compartimento, int esq, int dir){
+void ordena_quick(Compartimento* compartimento, int esq, int dir, int * comparacoes, int * movimentacoes){
 
     int i,j;
-    particao_quick(compartimento, esq, dir, &i,&j);
-    if(esq<j) ordena_quick(compartimento,esq,j);
-    if(i<dir)ordena_quick(compartimento,i,dir); 
+    particao_quick(compartimento, esq, dir, &i,&j, comparacoes, movimentacoes);
+    if(esq<j) ordena_quick(compartimento,esq,j, comparacoes, movimentacoes);
+    if(i<dir)ordena_quick(compartimento,i,dir, comparacoes, movimentacoes); 
 }
 
 void quick_sort(Compartimento* compartimento, int* comparacoes, int* movimentacoes){
-    ordena_quick(compartimento,0, compartimento->tamanho);
+    ordena_quick(compartimento,0, compartimento->tamanho-1,comparacoes,movimentacoes);
+    
 }
 
  

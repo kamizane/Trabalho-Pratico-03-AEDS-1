@@ -8,8 +8,8 @@
 //Cabecalho das funcoes
 FILE *leitura_arq(int argc, char **argv);
 
-void case_R_file(FILE * file, ListaMinerais * lista_minerais_file);
-void operacao_R(float lat_rocha, float long_rocha, float peso_rocha, ListaMinerais* lista_minerais);
+void case_R_file(FILE * file, ListaMinerais * lista_minerais_file, Compartimento * Compartimento);
+void operacao_R(float lat_rocha, float long_rocha, float peso_rocha, ListaMinerais* lista_minerais, Compartimento * Compartimento);
 void imprime_saida(Compartimento * compartimento,int comparacoes,int movimentacoes, double tempo, char algoritmo[]);
 
 int main(int argc, char **argv){
@@ -19,26 +19,25 @@ int main(int argc, char **argv){
             printf("Arquivo de entrada Invalido");
             return 0;
         }
-        int comparacoes1,comparacoes2, movimentacoes1, movimentacoes2;
+        int comparacoes1 = 0,comparacoes2 = 0, movimentacoes1 = 0, movimentacoes2 = 0;
         clock_t inicio, fim;
         double tempo1,tempo2;
-        Compartimento compartimento_1;
-        Compartimento compartimento_2;
+
         //le o numero de rochas
         int N_rochas = 0;
         fscanf(file,"%d",&N_rochas); fgetc(file);
 
+        Compartimento compartimento_1;
+        Compartimento compartimento_2;
+        faz_compartimento_vazio(&compartimento_1,N_rochas);
+        faz_compartimento_vazio(&compartimento_2,N_rochas);
         //executa a leitura das N_rochas
         for(int i=0;i<N_rochas;i++){
             ListaMinerais lista_minerais_file;
             fListaMineraisVazia(&lista_minerais_file);
-            case_R_file(file, &lista_minerais_file);
+            case_R_file(file, &lista_minerais_file, &compartimento_2);
         }
-        compartimento_2 = compartimento_1;
-
-        inicio = clock();
-        insert_sort(&compartimento_1,&comparacoes1,&movimentacoes1);
-        fim = clock();
+        //compartimento_2 = compartimento_1;
         tempo1 = (double)(fim-inicio)/CLOCKS_PER_SEC;
 
         inicio = clock();
@@ -46,7 +45,7 @@ int main(int argc, char **argv){
         fim = clock();
         tempo2 = (double)(fim-inicio)/CLOCKS_PER_SEC;
 
-        imprime_saida(&compartimento_1,comparacoes1,movimentacoes1,tempo1,"InsertSort");
+        //imprime_saida(&compartimento_1,comparacoes1,movimentacoes1,tempo1,"InsertSort");
         imprime_saida(&compartimento_2,comparacoes2,movimentacoes2,tempo2,"QuickSort");
     }    
     return 0;
@@ -61,12 +60,13 @@ FILE *leitura_arq(int argc, char **argv){
     return file;
     }
     else{
+        printf("Arquivo não encontrado");
         return 0;
     }
 }
 
 //inicia a leitura dos dados para a operacao R, dispostos em uma linha do arquivo
-void case_R_file(FILE * file, ListaMinerais * lista_minerais_file){
+void case_R_file(FILE * file, ListaMinerais * lista_minerais_file, Compartimento * Compartimento){
     char linha[255];
     char *buffer = NULL;
     const char delim[2] = " ";
@@ -100,12 +100,12 @@ void case_R_file(FILE * file, ListaMinerais * lista_minerais_file){
         m++;
 }
 //chamada da operacao R, que tem como parametro os dados da rocha
-operacao_R(lat_rocha, long_rocha, peso_rocha, lista_minerais_file);
+operacao_R(lat_rocha, long_rocha, peso_rocha, lista_minerais_file, Compartimento);
 }
 
 
 //Operacao responsavel por coletar uma nova rocha
-void operacao_R(float lat_rocha, float long_rocha, float peso_rocha, ListaMinerais* lista_minerais){
+void operacao_R(float lat_rocha, float long_rocha, float peso_rocha, ListaMinerais* lista_minerais, Compartimento * Compartimento){
     static int contId = 1;
 
     LocalRochaMineral local = { lat_rocha, long_rocha };
@@ -113,13 +113,13 @@ void operacao_R(float lat_rocha, float long_rocha, float peso_rocha, ListaMinera
 
     //inicializa a rocha a ser coletada
     inicializaRochaMineral(&rocha_file, contId, peso_rocha , lista_minerais,local);
-
+    inserir_rocha(Compartimento,&rocha_file);
 }
 
 
 void imprime_saida(Compartimento * compartimento,int comparacoes,int movimentacoes, double tempo, char algoritmo[]){
-    imprime_compartimento(compartimento);
+    //imprime_compartimento(compartimento);
     printf("\n");
-    printf("Comparacoes: %d\nMovimentacoes: %d\nTempo de execucao: %fs\nAlgoritimo: %s", comparacoes,movimentacoes,tempo,algoritmo);
+    printf("Comparacoes: %d\nMovimentacoes: %d\nTempo de execucao: %lfs\nAlgoritimo: %s", comparacoes,movimentacoes,tempo,algoritmo);
 
 }

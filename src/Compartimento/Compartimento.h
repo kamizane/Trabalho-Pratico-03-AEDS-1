@@ -27,7 +27,6 @@ float retorna_peso_atual(Compartimento* compartimento);
 
 int inserir_rocha(Compartimento* compartimento, RochaMineral* rocha);
 
-void insert_sort(Compartimento* compartimento, int* comparacoes, int* movimentacoes);
 
 void quick_sort(Compartimento* compartimento, int* comparacoes, int* movimentacoes);
 
