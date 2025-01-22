@@ -63,13 +63,12 @@ void insert_sort(Compartimento* compartimento, int* comparacoes, int* movimentac
         int j = i - 1;
 
         while (j >= 0 && compartimento->rochas[i].peso > chave.peso){
-            comparacoes++;
+            *comparacoes++;
             compartimento->rochas[j+1] = compartimento->rochas[i];
-            movimentacoes++;
+            *movimentacoes++;
             j--;
         }
         compartimento->rochas[j+1] = chave;
-        movimentacoes++;
         
     }
 }
