@@ -54,7 +54,7 @@ int inserir_rocha(Compartimento* compartimento, RochaMineral* rocha){ //adiciona
     return 0;
 }
 
-void insert_sort(Compartimento* compartimento, int* comparacoes, int* movimentacoes){
+void insertion_sort(Compartimento* compartimento, int* comparacoes, int* movimentacoes){
     int n = compartimento->ultimo;
 
     for(int i = 1; i < n; i++){

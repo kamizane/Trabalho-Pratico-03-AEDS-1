@@ -45,7 +45,7 @@ int main(int argc, char **argv){
 
         //inicio da medicao de tempo do algoritimo 1
         inicio = clock();
-        insert_sort(&compartimento_1,&comparacoes1, &movimentacoes1);
+        insertion_sort(&compartimento_1,&comparacoes1, &movimentacoes1);
         fim = clock();
         tempo1 = (double)(fim-inicio)/CLOCKS_PER_SEC;
 
@@ -55,7 +55,7 @@ int main(int argc, char **argv){
         fim = clock();
         tempo2 = (double)(fim-inicio)/CLOCKS_PER_SEC;
 
-        imprime_saida(&compartimento_1,comparacoes1,movimentacoes1,tempo1,"InsertSort");
+        imprime_saida(&compartimento_1,comparacoes1,movimentacoes1,tempo1,"InsertionSort");
         imprime_saida(&compartimento_2,comparacoes2,movimentacoes2,tempo2,"QuickSort");
     }    
     return 0;
