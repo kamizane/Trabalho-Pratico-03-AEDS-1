@@ -59,8 +59,7 @@ void insert_sort(Compartimento* compartimento, int* comparacoes, int* movimentac
 
     for(int i = 1; i < n; i++){
         RochaMineral chave = compartimento->rochas[i];
-        *movimentacoes += 1;
-
+        
         int j = i - 1;
 
         *comparacoes +=1;
