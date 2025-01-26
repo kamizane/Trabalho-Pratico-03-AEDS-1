@@ -108,8 +108,8 @@ void case_R_file(FILE * file, ListaMinerais * lista_minerais_file, Compartimento
         TItem a = {minerais[m]}; 
         insereMineralLista(lista_minerais_file, a);
         m++;
-}
-cria_rocha(lat_rocha, long_rocha, peso_rocha, lista_minerais_file, Compartimento);
+    }
+    cria_rocha(lat_rocha, long_rocha, peso_rocha, lista_minerais_file, Compartimento);
 }
 
 
