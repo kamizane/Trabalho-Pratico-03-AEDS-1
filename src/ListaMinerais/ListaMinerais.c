@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include ".\ListaMinerais.h"
+#include "./ListaMinerais.h"
 
 #define InicioArranjo 0
 #define MaxTam 3

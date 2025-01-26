@@ -3,7 +3,7 @@
 #include <string.h>
 #include <math.h>
 #include <time.h>
-#include "Compartimento\Compartimento.h"
+#include "Compartimento/Compartimento.h"
 
 //Cabecalho das funcoes
 FILE *leitura_arq(int argc, char **argv);
